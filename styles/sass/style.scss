@@ -1,12 +1,100 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: beige;
+    margin: 0 auto;
+    color: #2c2c2c;
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 32px;
+}
 
 h1 {
-    color: blue;
+    color: #2c2c2c;
+    display: flex;
+    font-family: 'Lora';
+    font-size: 8rem;
+    font-style: bold;
+    text-transform: uppercase;
 }
 
 h2 {
-    color: purple;
+    color: #2c2c2c;
+    display: flex;
+    border: 2px solid;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 4.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 h3 {
-    color: blue;
+    color: #2c2c2c;
+    display: flex;
+    border: 2px solid;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+div.featuredContent {
+    display: flex;
+    justify-content: center;
+    height: 90%;
+}
+
+p {
+    border: 2px solid;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    font-family: 'Roboto', 'Sans-serif';
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f6a823;
+}
+
+.index-footer {
+    display: flex;
+    justify-content: center;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+nav.contactNav {
+    background-color: #f6a823;
+    width: 100%;
+}
+
+header.home {
+    background-color: #f6a823;
+    width: 100%;
+}
+
+div.wrapper.headerContent {
+    display: flex;;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+button.findoutmore,
+button.readmore {
+    background-color: #05afc1;
+    display: flex;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 32px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
