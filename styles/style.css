@@ -202,16 +202,15 @@ template {
   display: none;
 }
 
-html {
-  font-size: 62.5%;
+footer {
+  background-color: #2c2c2c;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
-body {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 960px;
-  padding-right: 10px;
-  padding-left: 10px;
+html {
+  font-size: 62.5%;
 }
 
 body {
@@ -337,15 +336,6 @@ ul {
   font-weight: bold;
   text-transform: uppercase;
   color: #f6a823;
-}
-
-.indexFooter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 a:link {
