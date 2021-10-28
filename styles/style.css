@@ -207,6 +207,7 @@ footer {
   color: white;
   padding: 20px;
   text-align: center;
+  display: block;
 }
 
 html {
@@ -214,13 +215,11 @@ html {
 }
 
 body {
-  background-color: beige;
-  width: 100%;
-  margin: 0 auto;
   color: #2c2c2c;
+  font-family: "Roboto", sans-serif;
   font-size: 2rem;
-  text-transform: uppercase;
   line-height: 32px;
+  letter-spacing: 1px;
 }
 
 div.headerContainer {
@@ -251,10 +250,12 @@ section.auditorium {
   width: 100%;
 }
 
+img {
+  max-width: 100%;
+}
+
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  background-color: #f6a823;
 }
 
 div.featuredContent {
@@ -286,43 +287,25 @@ h1 {
 }
 
 h2 {
-  color: #2c2c2c;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: "Roboto";
-  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
   font-size: 4.2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 h3 {
-  color: #2c2c2c;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 3.2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-div.wrapper {
+.wrapper {
   max-width: 2520px;
+  width: 90%;
   margin: 0 auto;
-  background-color: #f6a823;
-}
-
-h2.whoIs {
-  width: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 ul {
@@ -351,38 +334,28 @@ li:hover {
   color: white;
 }
 
-nav.contactNav {
+nav {
   background-color: #f6a823;
+  margin: 0 auto;
+  padding: 20px;
   width: 100%;
 }
 
-header.home {
+header {
   background-color: #f6a823;
 }
 
-div.wrapper.headerContent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
+div {
+  display: block;
 }
 
-button.findOutMore,
-button.readMore {
-  background-color: #05afc1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+button {
+  background-color: #1fccdf;
   border: none;
-  position: relative;
+  color: #2c2c2c;
+  cursor: pointer;
+  font-family: "Roboto", "Sans-serif";
   font-size: 2rem;
-  font-weight: bold;
-  line-height: 32px;
-  letter-spacing: 1px;
+  font-weight: 700;
   text-transform: uppercase;
-  padding: 10px 15px;
 }
