@@ -35,8 +35,6 @@ img {
 }
 
 main {
-    max-width: 1080px;
-    width: 85%;
     margin: 0 auto;
 }
 
@@ -53,7 +51,8 @@ main {
 }
 
 .gallery img {
-    width: calc(100 / 3 -20px);
+    padding: 20px;
+    width: calc(100% / 3);
 }
 
 
@@ -100,9 +99,14 @@ a.sophieMiddle {
     text-transform: uppercase;
 }
 
-div.allAbout {
-    display: flex;
-    justify-content: center;
+.allAbout {
+    position: relative;
+}
+
+div.allAbout img {
+    position: absolute;
+    top: -40px;
+    left: -30px;
 }
 
 // headers
@@ -142,7 +146,7 @@ h4 {
 }
 
 div.heroBlog {
-    background-image: url(../assets/blog-image-1.jpg);
+    background-image: url("../assets/contact-image-1.jpg");
     align-items: flex-end;
     display: flex;
     height: 45vh;
@@ -154,8 +158,14 @@ div.heroBlog {
 
 // GRID STYLING
 
-.flexGrid {
+
+.infoGridItem {
+    width: 50%;
+}
+
+.infoText {
     display: flex;
+    flex-wrap: wrap;
 }
 
 // NAV AND UL STYLINGS
@@ -167,10 +177,11 @@ header .topNav {
     width: 100%;
 }
 
-.flexRow,
-.navMenu {
-    display: flex;
-    justify-content: center;
+a.navLink:active {
+    color:white;
+}
+
+.flexRow {
     list-style: none;
 }
 
@@ -223,27 +234,30 @@ button {
 
 // SECTION STYLING
 
-section.blogSection {
+.blogSection {
     background-color: #f0efed;
     padding: 100px 0px;
 }
 
-section.infoGrid {
+.infoText {
+    display: flex;
+    justify-content: center;
     background-color: #f0efed;
     margin-top: -20px;
     padding-top: 80px;
     padding-bottom: 80px;
 }
 
-section.auditorium {
-        background-image: url(/styles/assets/home-image-4.jpg);
-        background-position: center;
-        background-size: cover;
-        height: 35vh;
-        width: 100%;
+.auditorium {
+    // background-color: purple;
+    background-repeat: no-repeat;
+    background-image: url("../assets/home-image-4.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 35vh;
 }
 
-section.sophiesJourney {
+.sophiesJourney {
     background-color: #f0efed;
     padding: 70px 0;
 }
