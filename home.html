@@ -13,10 +13,10 @@
 <body>
     <header>
         <nav class="topNav">
-            <div>
+            <div class="navContainer">
                 <ul class="flexRow navMenu">
                     <li>
-                        <a href="#home">home</a>
+                        <a href="./home.html" id="home">home</a>
                     </li>
                     <li>
                         <a href="#about">about</a>
@@ -25,10 +25,10 @@
                         <a class="sophieMiddle">sophie</a>
                     </li>
                     <li>
-                        <a href="./blog.html">blog</a>
+                        <a href="./blog.html" id="#blog">blog</a>
                     </li>
                     <li>
-                        <a href="./contact.html">contact</a>
+                        <a href="./contact.html" id="#contact">contact</a>
                     </li>
                 </ul>
             </div>    
@@ -36,37 +36,38 @@
             <!-- nav end -->
             
         <div class="flexRow hero wrapper"> 
-            <div class="sophieInfo">
+            <div class="heroText">
                 <div class="allAbout"
-                    <img class="aboutSophie" src="./styles/assets/circle-text.png" alt="all-about text image">
+                    <img src="./styles/assets/circle-text.png" alt="allAbout text image">
                     <h1 class="sophieText">Sophie</h1>
                 </div>
 
-                <div>
-                    <img class="sophieFruit" src="./styles/assets/home-image-1.jpg" alt="Sophie with fruit slices over her eyes"
+                <div class="heroImage">
+                    <img src="./styles/assets/home-image-1.jpg" alt="Sophie with fruit slices over her eyes"
+                    <div></div>
                 </div>
-        </div>   
+        </div>  
     </header>
     <!-- HEADER END -->
 
     <!-- MAIN START -->
     <main>
-        <section>
-            <h2 class="whoIs">who is sophie?</h2>
+        <section class="about" id="about">
+            <h2>who is sophie?</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristque eu. Sed urna ex, porttitor nec iaculis at, consecuator vel turpis. Vestibuulum ultricies, felis in lacinia porttitor, tortor metus convallis augue, at fermentum diam erat nec quam. Nulla fascilsi.</p>
-            <button class="findOutMore" href="#">find out more</button>   
+            <button>find out more</button>   
         </section>
 
-        <section>
-            <div>
-                <div>
-                    <img src="./styles/assets/home-image-2.jpg" alt="A dog gazing outside the window of an orange car" class="">
+        <section class="sophieFavourite">
+            <div class="doggo">
+                <div class="redOverlay">
+                    <img src="./styles/assets/home-image-2.jpg" alt="A dog gazing outside the window of an orange car">
                 </div>
 
                 <div>
                     <h3>sophie's favourite things</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatibus impedit odio incidunt autem dolores dignissimos vel itaque maxime, iusto deserunt cumque, illo laborum laboriosam placeat mollitia illum nulla voluptas?</p>
-                    <button class="findOutMore" href="#">find out more</button>
+                    <button href="#blog">find out more</button>
                 </div>
             </div>
         </section>
@@ -127,7 +128,7 @@
             <div class="wrapper">
                 <div class="journeyImg">
                     <div class="orangeOverlay"></div>
-                    <img src="/styles/assets/home-image-5.jpg" alt="Sophie in the city with shades and orange top gazing to the side">
+                    <img src="./styles/assets/home-image-5.jpg" alt="Sophie in the city with shades and orange top gazing to the side">
                 </div>
             </div>
             
@@ -142,7 +143,6 @@
 
         <!-- final section with 3 gallery photos -->
         <section class="gallery wrapper">
-            <!-- put a div? -->
                 <img src="./styles/assets/home-image-6.jpg" alt="">
                 <img src="./styles/assets/home-image-7.jpg" alt="">
                 <img src="./styles/assets/home-image-8.jpg" alt="">

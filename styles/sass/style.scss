@@ -21,14 +21,23 @@ body {
     letter-spacing: 1px;
 }
 
-div.headerContainer {
-    display: flex;
-    width: 2520px;
+.contact aside ul {
+    display: grid;
+    gap: 5px;
+    grid-auto-flow: column;
+    margin-left: 0;
+    width: 60%;
 }
 
 img {
     max-width: 100%;
     border-style: none;
+}
+
+main {
+    max-width: 1080px;
+    width: 85%;
+    margin: 0 auto;
 }
 
 .gallery {
@@ -65,8 +74,11 @@ img {
 }
 
 header {
-    background-color: #f6a823
+    background-color: #f6a823;
+    display: block;
 }
+
+div.heroText
 
 header .hero {
     margin: 50px auto 0;
@@ -120,7 +132,31 @@ h3 {
     text-transform: uppercase;
 }
 
-// 
+h4 {
+    display: block;
+    margin: 10px 0px;
+    margin-block-start: 1.33rem;
+    margin-block-end: 1.33rem;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+div.heroBlog {
+    background-image: url(../assets/blog-image-1.jpg);
+    align-items: flex-end;
+    display: flex;
+    height: 45vh;
+    margin: 0 auto;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+// GRID STYLING
+
+.flexGrid {
+    display: flex;
+}
 
 // NAV AND UL STYLINGS
 
@@ -130,18 +166,12 @@ header .topNav {
     margin: 0 auto;
     width: 100%;
 }
+
 .flexRow,
 .navMenu {
     display: flex;
     justify-content: center;
     list-style: none;
-}
-
-nav {
-    background-color: #f6a823;
-    margin: 0 auto;
-    padding: 20px;
-    width: 100%;
 }
 
 ul {
@@ -158,12 +188,23 @@ a:link {
     text-decoration: none;
 }
 
+a.navLink {
+    color: #2c2c2c;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 30px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
 li {
+    list-style: none;
     color: black;
     padding: 0px 80px
 }
 
-li:hover { color: white; } 
+li:click { color: white; } 
 
 div {
     display: block;
@@ -182,22 +223,18 @@ button {
 
 // SECTION STYLING
 
+section.blogSection {
+    background-color: #f0efed;
+    padding: 100px 0px;
+}
+
 section.infoGrid {
-    display: block;
     background-color: #f0efed;
     margin-top: -20px;
     padding-top: 80px;
     padding-bottom: 80px;
 }
-    
-    
-section.whiteBackground {
-        background-color: #f0efed;
-        height: 60vh;
-        padding-left: 100px;
-}
 
-    
 section.auditorium {
         background-image: url(/styles/assets/home-image-4.jpg);
         background-position: center;
