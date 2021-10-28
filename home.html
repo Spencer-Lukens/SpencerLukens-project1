@@ -11,30 +11,31 @@
     <title>It's All About Sophie</title>
 </head>
 <body>
-    <header id="home">
-        <nav>
-            <div
-            <ul>
-                <li>
-                    <a href="#home">home</a>
-                </li>
-                <li>
-                    <a href="#about">about</a>
-                </li>
-                <li>
-                    <a class="sophieMiddle">sophie</a>
-                </li>
-                <li>
-                    <a href="./blog.html">blog</a>
-                </li>
-                <li>
-                    <a href="./contact.html">contact</a>
-                </li>
-            </ul>
+    <header>
+        <nav class="topNav">
+            <div>
+                <ul class="flexRow navMenu">
+                    <li>
+                        <a href="#home">home</a>
+                    </li>
+                    <li>
+                        <a href="#about">about</a>
+                    </li>
+                    <li>
+                        <a class="sophieMiddle">sophie</a>
+                    </li>
+                    <li>
+                        <a href="./blog.html">blog</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">contact</a>
+                    </li>
+                </ul>
+            </div>    
         </nav>
             <!-- nav end -->
             
-        <div class="headerContainer"> 
+        <div class="flexRow hero wrapper"> 
             <div class="sophieInfo">
                 <div class="allAbout"
                     <img class="aboutSophie" src="./styles/assets/circle-text.png" alt="all-about text image">
@@ -63,7 +64,7 @@
                 </div>
 
                 <div>
-                    <h3>sophie's favourite things</h3>
+                    <h3>sophie's favourite things</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatibus impedit odio incidunt autem dolores dignissimos vel itaque maxime, iusto deserunt cumque, illo laborum laboriosam placeat mollitia illum nulla voluptas?</p>
                     <button class="findOutMore" href="#">find out more</button>
                 </div>
@@ -73,7 +74,7 @@
         <section>
             <div>
                 <div>
-                    <h3 class="whereWasSophie">where she's travelled</h3>
+                    <h2 class="whereWasSophie">where she's travelled</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatibus impedit odio incidunt autem dolores dignissimos vel itaque maxime, iusto deserunt cumque, illo laborum laboriosam placeat mollitia illum nulla voluptas?</p>
                     <button class="readMore" href="/blog.html">read more</button>
                 </div
@@ -86,39 +87,65 @@
 
         <!-- 4 divs for grid/flexbox array, add hyperlink buttons for icons -->
         <section class="infoGrid">
-            <div class="wrapper grid"</div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="wrapper flexGrid"
+                <div class="infoGridItem">
+                    <div class="gridText">
+                        <h3>photos</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid deleniti rerum dolores, necessitatibus, quidem nam expedita id ea illo commodi dignissimos? Voluptas eius mollitia incidunt, fuga autem asperiores optio id?</p>
+                    </div>  
+                </div>
+        
+                <div class="infoGridItem">
+                    <div class="gridText">
+                        <h3>about</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid deleniti rerum dolores, necessitatibus, quidem nam expedita id ea illo commodi dignissimos? Voluptas eius mollitia incidunt, fuga autem asperiores optio id?</p>
+                    </div>
+                </div>
+
+                <div class="infoGridItem">
+                    <div class="gridText">
+                        <h3>blog</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid deleniti rerum dolores, necessitatibus, quidem nam expedita id ea illo commodi dignissimos? Voluptas eius mollitia incidunt, fuga autem asperiores optio id?</p>
+                    </div>
+                </div>  
+                  
+                <div class="infoGridItem">
+                    <div class="gridText">
+                        <h3>get in touch</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid deleniti rerum dolores, necessitatibus, quidem nam expedita id ea illo commodi dignissimos? Voluptas eius mollitia incidunt, fuga autem asperiores optio id?</p>
+                    </div>
+                </div>  
+            </div>
         </section>
 
         <!-- auditorium bleachers photo in div-->
         <section class="auditorium">
         </section>
 
-        <!-- sophie's journey -->
-        <section>
+        <!-- sophie's journey img and overlay -->
+        <section class="sophiesJourney">
             <div class="wrapper">
-                <img src="" alt="" >
+                <div class="journeyImg">
+                    <div class="orangeOverlay"></div>
+                    <img src="/styles/assets/home-image-5.jpg" alt="Sophie in the city with shades and orange top gazing to the side">
+                </div>
             </div>
             
-            <div>
-                <h2>
-                    <p></p>
-                </h2>
-                <button>
-
-                </button>
+        <!--sophie's journey text  -->
+            <div class="journeyInfo">
+                <h2>sophie's journey</h2>
+                    <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est obcaecati porro nemo, corrupti ex molestias ullam velit saepe quaerat, odit sit impedit sed harum cupiditate laboriosam reprehenderit a accusamus officiis.
+                <button>find out more</button>
             </div>
         </section>
 
         <!-- final section with 3 gallery photos -->
-        <section class="">
+        <section class="gallery wrapper">
             <!-- put a div? -->
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+                <img src="./styles/assets/home-image-6.jpg" alt="">
+                <img src="./styles/assets/home-image-7.jpg" alt="">
+                <img src="./styles/assets/home-image-8.jpg" alt="">
         </section>
     </main>
     <!-- MAIN END -->

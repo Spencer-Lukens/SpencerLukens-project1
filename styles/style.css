@@ -214,6 +214,18 @@ html {
   font-size: 62.5%;
 }
 
+p {
+  display: block;
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+
 body {
   color: #2c2c2c;
   font-family: "Roboto", sans-serif;
@@ -229,33 +241,54 @@ div.headerContainer {
   width: 2520px;
 }
 
-section.infoGrid {
-  background-color: #f0efed;
-  margin-top: -18px;
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-section.whiteBackground {
-  background-color: #f0efed;
-  height: 60vh;
-  padding-left: 100px;
-}
-
-section.auditorium {
-  background-image: url(/styles/assets/home-image-4.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 35vh;
-  width: 100%;
-}
-
 img {
   max-width: 100%;
+  border-style: none;
+}
+
+.gallery {
+  padding: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper {
+  max-width: 1080px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.gallery img {
+  width: calc(100 / 3 -20px);
+}
+
+.orangeOverlay {
+  background-color: #f6a823;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  bottom: -40px;
+  right: -40px;
+}
+
+.sophiesJourney {
+  display: block;
+  position: relative;
+  background-color: #f0efed;
+  padding: 70px;
 }
 
 header {
   background-color: #f6a823;
+}
+
+header .hero {
+  margin: 50px auto 0;
+  height: 55vh;
 }
 
 div.featuredContent {
@@ -277,6 +310,15 @@ a.sophieMiddle {
   text-transform: uppercase;
 }
 
+div.allAbout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 h1 {
   color: #2c2c2c;
   display: inline-block;
@@ -296,16 +338,35 @@ h2 {
 
 h3 {
   font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 3.2rem;
-  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 700;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-.wrapper {
-  max-width: 2520px;
-  width: 90%;
+header .topNav {
+  background: #f6a823;
+  padding: 20px;
   margin: 0 auto;
+  width: 100%;
+}
+
+.flexRow,
+.navMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+
+nav {
+  background-color: #f6a823;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
 }
 
 ul {
@@ -334,17 +395,6 @@ li:hover {
   color: white;
 }
 
-nav {
-  background-color: #f6a823;
-  margin: 0 auto;
-  padding: 20px;
-  width: 100%;
-}
-
-header {
-  background-color: #f6a823;
-}
-
 div {
   display: block;
 }
@@ -358,4 +408,31 @@ button {
   font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+section.infoGrid {
+  display: block;
+  background-color: #f0efed;
+  margin-top: -20px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+section.whiteBackground {
+  background-color: #f0efed;
+  height: 60vh;
+  padding-left: 100px;
+}
+
+section.auditorium {
+  background-image: url(/styles/assets/home-image-4.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 35vh;
+  width: 100%;
+}
+
+section.sophiesJourney {
+  background-color: #f0efed;
+  padding: 70px 0;
 }
