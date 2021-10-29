@@ -202,6 +202,17 @@ template {
   display: none;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 footer {
   background-color: #2c2c2c;
   color: white;
@@ -212,6 +223,10 @@ footer {
 
 html {
   font-size: 62.5%;
+}
+
+.fab {
+  font-family: "Font Awesome 5 Brands";
 }
 
 p {
@@ -240,6 +255,26 @@ body {
   grid-auto-flow: column;
   margin-left: 0;
   width: 60%;
+}
+
+.blogSection article form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: row;
+  gap: 20px;
+}
+
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
 }
 
 img {
@@ -293,9 +328,8 @@ header {
   display: block;
 }
 
-div.heroText header .hero {
-  margin: 50px auto 0;
-  height: 55vh;
+div {
+  display: block;
 }
 
 div.featuredContent {
@@ -363,8 +397,24 @@ h4 {
   text-transform: uppercase;
 }
 
-div.heroBlog {
+.heroBlog {
+  background-image: url("../assets/blog-image-1.jpg");
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 45vh;
+  margin: 0 auto;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.heroContact {
   background-image: url("../assets/contact-image-1.jpg");
+  height: 45vh;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -380,6 +430,11 @@ div.heroBlog {
 
 .infoGridItem {
   width: 50%;
+}
+
+.infoGridItem h3 .infoGridItem p {
+  margin: 50px;
+  padding-left: 50px;
 }
 
 .infoText {
@@ -401,11 +456,14 @@ a.navLink:active {
   color: white;
 }
 
-.flexRow {
+ul li {
   list-style: none;
 }
 
 ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -462,6 +520,18 @@ button {
   padding: 100px 0px;
 }
 
+.blogSection article .gridItem3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.blogSection article form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: row;
+  gap: 20px;
+}
+
 .infoText {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -486,4 +556,17 @@ button {
 .sophiesJourney {
   background-color: #f0efed;
   padding: 70px 0;
+}
+
+.heroContact h1 {
+  font-family: "Lora", serif;
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: -15px;
+  z-index: 10;
+}
+
+.heroImage img {
+  position: float;
 }
