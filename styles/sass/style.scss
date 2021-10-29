@@ -8,10 +8,6 @@ html {
     font-size: 62.5%;
 }
 
-.fab {
-    font-family: "Font Awesome 5 Brands";
-}
-
 p {
     display: block;
     margin-block-start: 1rem;
@@ -50,6 +46,7 @@ body {
 .far,
 .fas {
     display: inline-block;
+    font-family: "Font Awesome 5 Brands";
     font-style: normal;
     font-variant: normal;
     line-height: 1;
@@ -57,8 +54,9 @@ body {
 }
 
 img {
-    max-width: 100%;
     border-style: none;
+    max-width: 100%;
+    display: block;
 }
 
 main {
@@ -66,15 +64,15 @@ main {
 }
 
 .gallery {
-    padding: 80px 0;
     display: flex;
     justify-content: space-between;
+    padding: 80px 0;
 }
 
 .wrapper {
+    margin: 0 auto;
     max-width: 1080px;
     width: 85%;
-    margin: 0 auto;
 }
 
 .gallery img {
@@ -82,30 +80,45 @@ main {
     width: calc(100% / 3);
 }
 
-
 .orangeOverlay {
     background-color: #f6a823;
-    width: 300px;
     height: 300px;
     position: absolute;
-    bottom: -40px;
-    right: -40px;
+    width: 300px;
+}
+
+.redOverlay {
+    background-color: #a82706;
+    height: 400px;
+    position: absolute;
+    left: 200px;
+    width: 1000px;
 }
 
 .sophiesJourney {
-    display: block;
-    position: relative;
     background-color: #f0efed;
+    display: block;
     padding: 70px;
+}
+
+.sophieFavourite {
+    background:#f0efed
+}
+div.doggo img {
+    position: relative;
+    left: 20px;
+    top: -20px;
+}
+
+div.journeyImage img {
+    position: relative;
+    right: 20px;
+    top: -20px;
 }
 
 header {
     background-color: #f6a823;
     display: block;
-}
-
-div.heroText {
-
 }
 
 div {
@@ -114,10 +127,10 @@ div {
 
 div.featuredContent {
     display: flex;
+    height: 60vh;
+    justify-content: center;
     position: relative;
     width: 100%;
-    justify-content: center;
-    height: 60vh;
 }
 
 a.sophieMiddle {
@@ -132,9 +145,9 @@ a.sophieMiddle {
 }
 
 div.allAbout img {
+    left: -30px;
     position: absolute;
     top: -40px;
-    left: -30px;
 }
 
 // headers
@@ -156,6 +169,24 @@ h2 {
     letter-spacing: 1px;
 }
 
+section h2.whoIs {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 4.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 10rem;
+}
+
+section p.whoIsText {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.findOutButton {
+    margin-left: 10rem;
+}
+
 h3 {
     font-family: "Roboto", sans-serif;
     font-size: 32px;
@@ -175,25 +206,24 @@ h4 {
 
 .heroBlog {
     background-image: url("../assets/blog-image-1.jpg");
+    background-position: center;
+    background-size: cover;
     align-items: flex-end;
     display: flex;
     height: 45vh;
     margin: 0 auto;
     width: 100%;
-    background-position: center;
-    background-size: cover;
 }
 
 .heroContact {
     background-image: url("../assets/contact-image-1.jpg");
-    height: 45vh;
+    background-position: center;
+    background-size: cover;
     align-items: flex-end;
     display: flex;
     height: 45vh;
     margin: 0 auto;
     width: 100%;
-    background-position: center;
-    background-size: cover;
 }
 
 // GRID STYLING
@@ -313,7 +343,7 @@ button {
     background-image: url("../assets/home-image-4.jpg");
     background-position: center;
     background-size: cover;
-    height: 35vh;
+    height: 40vh;
 }
 
 .sophiesJourney {
