@@ -45,51 +45,40 @@
 
     <main>
         <section class="contact">
-            <div class="wrapper">
+            <div class="wrapperContact">
                 <div class="blogText">
                     <aside>
-                        <div>
-                            <div class="infoCard">
-                                <ul>
-                                    <li>
-                                        <i class="fab fa-facebook-f"></i>
-                                    <li>
-                                    <li>
-
-                                    </li>
-                                    <li>
-
-                                    </li>
-                                    <li>
-
-                                    </li>
-                                </ul>
-                                <h4>info@email.com</h4>
-                                <p>123 - 456 - 7890</p>
-                                <p>123 Queen Street West, Unit 10</p>
-                                <p>Toronto, Ontario</p>
-                                <p>M5V 2D5</p>
-                            </div>
-                            <!-- 2nd CARD -->
-                            <div class="infoCard">
-                                <h4>recent posts</h4>
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </div>
+                        <div class="infoCard">
+                            <ul>
+                                <li>
+                                </li>
+                                <li>
+                                </li>
+                                <li>
+                                </li>
+                                <li>
+                                </li>
+                            </ul>
+                            <h4>info@email.com</h4>
+                            <p>123 - 456 - 7890</p>
+                            <p>123 Queen Street West, Unit 10</p>
+                            <p>Toronto, Ontario</p>
+                            <p>M5V 2D5</p>
                         </div>
                     </aside>
                     
                     <article>
                         <div class="getInTouch">
-                            <form action="submit">
-                                <input id="userName" class="gridItem1" type="text" name="Name" placeholder="Name">
-                                <input id="userEmail" class="gridItem2" type="text" name="Name" placeholder="E-mail address">
-                                <textarea id="messageSophie" class="gridItem3" name="messageSophie" cols="30" rows="10" placeholder="Message"></textarea>
-                                <button class="gridItem4" disabled="">Submit</button>
+                            <form action="submit" onsubmit="submitForm()" id="jsForm">
+                                <label for="Name" hidden="">Your Name:</label>
+                                <input class="gridItem1" type="text" name="Name" id="Name" placeholder="Name">
+                                
+                                <label for="userEmail" hidden="">Email</label>
+                                <input class="gridItem2" type="email" name="Name" id="Email" placeholder="E-mail address">
+
+                                <textarea class="gridItem3" name="messageSophie" id="messageSophie" cols="30" rows="10" placeholder="Message"></textarea>
+
+                                <input class="gridItem4" type="submit" value="submit" id="btnsubmit" onclick="submitForm">
                             </form>
                         </div>
                     </article>
@@ -102,3 +91,5 @@
     </footer>
 </body>
 </html>
+
+<script src="script.js"></script>

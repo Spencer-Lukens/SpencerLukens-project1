@@ -75,6 +75,16 @@ main {
     width: 85%;
 }
 
+.getInTouch {
+    padding: 15px;
+}
+
+.wrapperContact {
+    margin: 0 auto;
+    max-width: 1080px;
+    width: 85%;
+}
+
 .gallery img {
     padding: 20px;
     width: calc(100% / 3);
@@ -140,6 +150,11 @@ a.sophieMiddle {
     text-transform: uppercase;
 }
 
+*, ::before, ::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
 .allAbout {
     position: relative;
 }
@@ -148,6 +163,10 @@ div.allAbout img {
     left: -30px;
     position: absolute;
     top: -40px;
+}
+
+label {
+    display: block;
 }
 
 // headers
@@ -228,22 +247,6 @@ h4 {
 
 // GRID STYLING
 
-
-.infoGridItem {
-    width: 50%;
-}
-
-.infoGridItem h3
-.infoGridItem p {
-    margin: 50px;
-    padding-left: 50px;
-}
-
-.infoText {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 // NAV AND UL STYLINGS
 
 header .topNav {
@@ -301,6 +304,7 @@ div {
 button {
     background-color: #1fccdf;
     border: none;
+    padding: 5px;
     color: #2c2c2c;
     cursor: pointer;
     font-family: 'Roboto', 'Sans-serif';
@@ -311,22 +315,21 @@ button {
 
 // SECTION STYLING
 
-.blogSection {
-    background-color: #f0efed;
-    padding: 100px 0px;
+.blogText {
+    display: flex;
+    justify-content: space-between;
 }
 
-.blogSection article .gridItem3 {
-    grid-column-start: 1;
-    grid-column-end: 3;
+.blogText article {
+    flex-basis: 65%;
 }
 
-.blogSection article form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-flow: row;
-    gap: 20px;
-}
+// .blogText article form {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     grid-auto-flow: row;
+//     gap: 20px;
+// }
 
 .infoText {
     display: flex;
@@ -335,6 +338,11 @@ button {
     margin-top: -20px;
     padding-top: 80px;
     padding-bottom: 80px;
+}
+
+.contact {
+    background-color: #f0efed;
+    padding: 100px 0;
 }
 
 .auditorium {
@@ -361,6 +369,16 @@ text-transform: uppercase;
 margin-bottom: -15px;
 z-index: 10;
 
+}
+
+.gridItem4 {
+    background-color: #1fccdf;
+    width: 200px;
+}
+
+#btnsubmit {
+    background-color: #1fccdf;
+    width: 200px;
 }
 
 .heroImage img {
